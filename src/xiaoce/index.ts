@@ -20,7 +20,7 @@ const main = async() => {
     return;
   }
   const browser = await puppeteer.launch({
-    headless: false
+    // headless: false  // 如果想看具体操作流程，可打开
   });
   const page = await browser.newPage();
   await page.setViewport({
